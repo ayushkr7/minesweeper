@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let flags = 0
     let squares = [];
     let isGameOver = false;
-
+    document.getElementById("flag-left").innerHTML=20;
     //creating board
     function createBoard(){
         //get shuffled array with random bombs
@@ -96,6 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
                flags--;
            }
         }
+        document.getElementById("flag-left").innerHTML=20-flags;
         checkForWin();
     }
 
