@@ -1,13 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+ padding: 20px;
+ align-content: center;
+ width: 50%;
+ margin: auto;
+ margin-top: 17vh;;
+}
+
 .grid {
   height: 400px;
   width: 400px;
   display: flex;
   flex-wrap: wrap;
-  background-color: grey;
+  background-color: #dcd6bc;
 }
 
 .grid div {
   height: 40px;
   width: 40px;
+  text-align: center;
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+  border: 3px solid;
+  border-color: #f1efe2 #716f64 #716f64 #f1efe2;
 }
 
+.bomb{
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+
+.checked{
+  background-color: #ece9d8;
+}
+
+#flag-count{
+  width: 50%;
+  margin: auto;
+}
