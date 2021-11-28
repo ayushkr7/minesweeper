@@ -6,6 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let squares = [];
     let isGameOver = false;
     document.getElementById("flag-left").innerHTML=20;
+
+    
+
+
     //creating board
     function createBoard(){
         //get shuffled array with random bombs
@@ -138,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 click(newSquare);
             }
             if(currentId>10){
-                const newId = squares[parseInt(currentId)-width].id;
+                const newId = squares[parseInt(currentId-width)].id;
                 const newSquare = document.getElementById(newId);
                 click(newSquare);
             }
