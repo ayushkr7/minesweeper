@@ -1,16 +1,15 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.container{
- padding: 20px;
- align-content: center;
- width: 50%;
- margin: auto;
- margin-top: 17vh;;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13vh;
 }
 
 .grid {
@@ -34,19 +33,29 @@
   border-color: #f1efe2 #716f64 #716f64 #f1efe2;
 }
 
-.bomb{
+.bomb {
   text-align: center;
   padding-top: 7px;
   padding-bottom: 20px;
   box-sizing: border-box;
 }
 
-
-.checked{
+.checked {
   background-color: #ece9d8;
 }
 
-#flag-count{
-  width: 50%;
-  margin: auto;
+#flag-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  font-size: 30px;
+}
+
+.game-timer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vh;
+  font-size: 30px;
 }
