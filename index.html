@@ -4,16 +4,29 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" type="text/css" />
     <script src="app.js" charset="utf-8"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
     <title>Minesweeper</title>
   </head>
 
   <body>
-    <div class="game-timer">
-      <p id="timer"> Time : 00:00:00 </p><!--upcoming feature-->
+    <div class="table">
+      <div class="cell">
+        <h1>
+          <span id="hour">00</span>:<span id="minute">00</span>:<span
+            id="second"
+            >00</span
+          >
+        </h1>
+
+        <button id="startstop">Start</button>
+        <button id="reset">Reset</button>
+      </div>
     </div>
     <div class="container">
       <div class="grid"></div>
     </div>
-    <div id="flag-count">Flag-left: <span id="flag-left"></span></div>
+    <div id="flag-count">Flag-left:&nbsp; <span id="flag-left"></span></div>
   </body>
 </html>
