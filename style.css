@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .container {
@@ -18,6 +17,7 @@
   display: flex;
   flex-wrap: wrap;
   background-color: #dcd6bc;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .grid div {
@@ -40,6 +40,10 @@
   box-sizing: border-box;
 }
 
+.bomb-bg{
+  background-color: lightcoral;
+}
+
 .checked {
   background-color: #ece9d8;
 }
@@ -50,12 +54,40 @@
   align-items: center;
   margin-top: 5vh;
   font-size: 30px;
+  font-family: 'Orbitron', sans-serif;
 }
 
-.game-timer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 4vh;
-  font-size: 30px;
+h1 {
+  font-size: 3em;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/*Timer*/
+/* buttons */
+button {
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 10px 30px;
+  background: #dcd6bc;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: 0;
+  color: #000;
+  transition: all ease 300ms;
+}
+button:hover {
+  color: #333;
+  background: #f1efe2;
+}
+
+/* center content horizontally and vertically */
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
